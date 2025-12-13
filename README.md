@@ -71,7 +71,7 @@ A continuación se muestran capturas de pantalla sobre la ejecución en consola,
 ![Captura 2 de la Ejecución de Main](practica06(2).png)
 ![Captura 3 de la Ejecución de Main](practica06(3).png)
 
-El código fuente de los directorios está organizado por paquetes y se puede revisar directamente en la carpeta [src/]().
+El código fuente de los directorios está organizado por paquetes y se puede revisar directamente en la carpeta [src/](https://github.com/valeriagh-star/Practica-06/tree/main/src).
 
 | Carpetas | Ruta del Archivo .java |
 | :--- | :--- |
