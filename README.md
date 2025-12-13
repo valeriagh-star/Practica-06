@@ -87,6 +87,8 @@ Aquí se muestran las pruebas de ejecución del programa, demostrando la correct
 ![Captura 1 de la Ejecución de Main](practica06(1).png)
 ![Captura 2 de la Ejecución de Main](practica06(2).png)
 ![Captura 3 de la Ejecución de Main](practica06(3).png)
+![Captura 4 de la Tabla Comparativa](practica06(4).png)
+
 
 El código fuente de los directorios está organizado por paquetes y se puede revisar directamente en la carpeta [src/](https://github.com/valeriagh-star/Practica-06/tree/main/src).
 
@@ -100,9 +102,15 @@ El código fuente de los directorios está organizado por paquetes y se puede re
 ## ▶️ Instrucciones de ejecución
 
 1.  **Clonar/Importar el repositorio el Repositorio:** Importa la carpeta Proyecto como un proyecto Java existente en Eclipse o IntelliJ.
-2.  **Abrir Main:** Localiza el archivo src/Main.java.
-3.  **Ejecutar:** Haz clic derecho sobre src/Main.java y selecciona "Run As" -> "Java Application".
-4.  **Interacción:** El programa solicitará el Nombre, Correo y Rol (Empleado o Administrador) para crear un nuevo usuario. El programa manejará las validaciones automáticamente (Manejo de Excepciones) para el nombre de usuario (mínimo 5 caracteres) y el formato del correo electrónico (@ y .com). Se mostrará el menú correspondiente al Rol ingresado (Administrador o Empleado).
+2.  **Abrir Main:** Localiza la clase Main.java en package principal.
+3.  **Ejecutar:** Haz clic derecho sobre Main.java y selecciona "Run As" -> "Java Application".
+4.  **Interacción:** Una vez que el programa se inicie, se detendrá esperando tu entrada en la consola de Eclipse: El programa te pedirá que ingreses el número de hilos ($N$) a utilizar para el cálculo. Para realizar las pruebas de la práctica, ejecuta el programa cuatro veces, ingresando los siguientes valores en cada ocasión:
+    * 1 
+    * 2 
+    * 4 
+    * 8
+ 5. **Resultados:** Después de cada ejecución, la consola mostrará el resultado final de la suma y el tiempo total de ejecución en nanosegundos (ns).
+ 6. **Comparación:** Guarda estos valores (especialmente el tiempo) para cada uno de los 4 escenarios, ya que estos datos se utilizarán para generar la tabla comparativa de tiempos en el readme.txt.
 </div>
 
 
