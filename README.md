@@ -62,36 +62,23 @@ El programa debe medir el tiempo total de ejecución para los siguientes escenar
 
 El proyecto está organizado en la siguiente estructura de directorios:
 
-**Proyecto/**
-  **├── src/**
-  **│   ├── modulos/**
-  **│   │      ├── Administrador.java**
-  **│   │      ├── Empleado.java**
-  **│   │      └── Usuario.java**
-  **│   ├── Interfaces/**
-  **│   │      └── ArregloInterface.java**
-  **│   ├── Main.java**
-  **│   └── ManejadorLista.java**
-  **└── README.txt**
 
 ## 📸 Evidencias (Capturas de pantalla)
 
-A continuación se muestran capturas de pantalla sobre la ejecución en consola, donde se verifica el funcionamiento de las validaciones en los menús de Administrador y Empleado, el manejo de excepciones al intentar crear un usuario con datos inválidos, y el uso de las funcionalidades de ManejadorLista.
+A continuación se muestran capturas de pantalla sobre la ejecución en consola, donde se verifica el funcionamiento de 
 
-![Captura 1 de la Ejecución de Main](practica04(1).png)
-![Captura 2 de la Ejecución de Main](practica04(2).png)
+![Captura 1 de la Ejecución de Main](practica06(1).png)
+![Captura 2 de la Ejecución de Main](practica06(2).png)
+![Captura 3 de la Ejecución de Main](practica06(3).png)
 
-El código fuente de los directorios está organizado por paquetes y se puede revisar directamente en la carpeta [src/](https://github.com/valeriagh-star/Practica-04/tree/main/src).
+El código fuente de los directorios está organizado por paquetes y se puede revisar directamente en la carpeta [src/]().
 
 | Carpetas | Ruta del Archivo .java |
 | :--- | :--- |
-| **Clase Usuario** | [src/modulos/Usuario.java](https://github.com/valeriagh-star/Practica-04/blob/main/src/modulos/Usuario.java) | 
-| **Clase Administrador** | [src/modulos/Administrador.java](https://github.com/valeriagh-star/Practica-04/blob/main/src/modulos/Administrador.java) |
-| **Clase Empleado** | [src/modulos/Empleado.java](https://github.com/valeriagh-star/Practica-04/blob/main/src/modulos/Empleado.java) |
-| **Interfaz ArregloInterface** | [src/Interfaces/ArregloInterface.java](https://github.com/valeriagh-star/Practica-04/blob/main/src/Interfaces/arregloInterface.java) | 
-| **Clase Main** | [src/Main/Main.java](https://github.com/valeriagh-star/Practica-04/blob/main/src/Main.java) |
-| **Clase ManejadorLista** | [src/ManejadorLista/ManejadorLista.java](https://github.com/valeriagh-star/Practica-04/blob/main/src/ManejadorLista.java) |
-| **README** | [Practica04/main/README.txt](https://github.com/valeriagh-star/Practica-04/blob/main/README.txt) | 
+| **Clase HiloSuma** | [src/hilos/HiloSuma.java]() |
+| **Clase Acumulador** | [src/recursos/Acumulador.java]() |
+| **Clase Main** | [src/principal/Main.java]() |
+| **README** | [Practica06/main/README.txt]() | 
 
 ## ▶️ Instrucciones de ejecución
 
