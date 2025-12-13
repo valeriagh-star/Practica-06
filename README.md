@@ -96,9 +96,9 @@ Aquí se muestran las pruebas de ejecución del programa, demostrando la correct
   
 ![Captura 3 de la Ejecución de Main](practica06(3).png)
 
-* **Tabla Comparativa**
+* **Tabla Comparativa de Tiempos**
   
-![Captura 4 de la Tabla Comparativa](practica06(4).png)
+![Captura 4 de la Tabla Comparativa de Tiempos](practica06(4).png)
 
 El código fuente de los directorios está organizado por paquetes y se puede revisar directamente en la carpeta [src/](https://github.com/valeriagh-star/Practica-06/tree/main/src).
 
@@ -121,22 +121,4 @@ El código fuente de los directorios está organizado por paquetes y se puede re
     * 8
  5. **Resultados:** Después de cada ejecución, la consola mostrará el resultado final de la suma y el tiempo total de ejecución en nanosegundos (ns).
  6. **Comparación:** Guarda estos valores (especialmente el tiempo) para cada uno de los 4 escenarios, ya que estos datos se utilizarán para generar la tabla comparativa de tiempos en el readme.txt.
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 </div>
