@@ -62,15 +62,23 @@ El programa debe medir el tiempo total de ejecución para los siguientes escenar
 
 El proyecto está organizado en la siguiente estructura de directorios:
 
-Practica06/
-├── src/
-│   ├── hilos/
-│   │   └── HiloSuma.java (Cálculo de la suma parcial)
-│   ├── principal/
-│   │   └── Main.java (Coordinador y medidor de tiempos)
-│   └── recursos/
-│       └── Acumulador.java (Recurso compartido y sincronizado)
-└── README.txt (Documentación de la práctica)
+**Practica06/**
+
+**├── src/**
+
+**│   ├── hilos/**
+
+**│   │   └── HiloSuma.java**
+
+**│   ├── principal/**
+
+**│   │   └── Main.java**
+
+**│   └── recursos/**
+
+**│       └── Acumulador.java**
+
+**└── README.txt**
 
 ## 📸 Evidencias (Capturas de pantalla)
 
