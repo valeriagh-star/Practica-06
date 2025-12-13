@@ -1,8 +1,115 @@
  # Practica 06
 
-
-
+## ✅ Objetivo
 <div align="justify">
+El objetivo de esta practica es dividir un problema matemático en sub-tareas que se ejecuten en paralelo mediante hilos y, después, combinar los resultados correctamente.
+ 
+## ✍️ Descripción
+
+* **🎯 Problema Matemático:** Esta práctica consiste en calcular la suma total de la función $f(i) = i^2 + 3i + 1$ desde $i=1$ hasta $1,000,000$.
+
+La tarea se divide entre **$N$ hilos** (donde $N$ es un valor ingresado por el usuario), cada uno responsable de calcular un rango parcial de la suma. El hilo principal debe ensamblar los resultados parciales y garantizar la sincronización para evitar errores. Finalmente, se compararán los tiempos de ejecución para $1, 2, 4$ y $8$ hilos para evaluar el rendimiento.
+
+### 🧮 Ecuación a Resolver
+
+Se debe calcular la suma definida por:
+
+$$
+S = \sum_{i=1}^{1000000} f(i)
+$$
+
+Donde:
+
+$$
+f(i) = i^2 + 3i + 1
+$$
+
+### I. Requisitos de Implementación:
+
+1.  **Configuración de Hilos:** El programa debe aceptar como entrada del usuario el número de hilos ($N$) a utilizar.
+2.  **División de Trabajo:** El rango total de la suma ($1$ a $1,000,000$) debe dividirse equitativamente entre los $N$ hilos.
+    * *Ejemplo para $N=4$:* Hilo 1: $1 \rightarrow 250,000$, Hilo 2: $250,001 \rightarrow 500,000$, etc.
+3.  **Sincronización:** Cada hilo debe calcular su resultado parcial y guardarlo en una estructura compartida **sin generar condiciones de carrera**.
+    * Se deben usar mecanismos de sincronización (por ejemplo, `synchronized`, `Locks`) o estructuras concurrentes (`Atomic...`, `ConcurrentHashMap`, etc.).
+4.  **Ensamblado:** El hilo principal debe:
+    * Esperar a que todos los hilos finalicen (usando `join()` o un mecanismo similar).
+    * Sumar los resultados parciales para obtener el resultado final.
+    * Imprimir el resultado.
+
+ ## II. Medición de Tiempos
+
+El programa debe medir el tiempo total de ejecución para los siguientes escenarios:
+
+* Tiempo total con **1 hilo** (Línea base).
+* Tiempo total con **$N$ hilos** (configurable).
+
+### III. Entregables Obligatorios
+
+1.  **Código Java:** Código fuente bien estructurado y documentado. Debe incluir manejo de errores para el valor de $N$ ingresado por el usuario.
+2.  **Tabla de Tiempos:** Una tabla que compare los tiempos de ejecución para:
+    * 1 hilo
+    * 2 hilos
+    * 4 hilos
+    * 8 hilos
+3. **README:** Contestar en un readme las preguntas que vienen en las instrucciones de la práctica, las cuales serán una breve reflexión.
+
+## ⚙️ Tecnologías utilizadas
+
+* **Lenguaje:** JavaSE-24.
+* **IDE:** Eclipse IDE.
+
+## 📁 Estructura del Proyecto
+
+El proyecto está organizado en la siguiente estructura de directorios:
+
+**Proyecto/**
+  
+  **├── src/**
+
+  **│   ├── modulos/**
+  
+  **│   │      ├── Administrador.java**
+ 
+  **│   │      ├── Empleado.java**
+  
+  **│   │      └── Usuario.java**
+
+  **│   ├── Interfaces/**
+  
+  **│   │      └── ArregloInterface.java**
+ 
+  **│   ├── Main.java**
+
+  **│   └── ManejadorLista.java**
+  
+  **└── README.txt**
+
+## 📸 Evidencias (Capturas de pantalla)
+
+A continuación se muestran capturas de pantalla sobre la ejecución en consola, donde se verifica el funcionamiento de las validaciones en los menús de Administrador y Empleado, el manejo de excepciones al intentar crear un usuario con datos inválidos, y el uso de las funcionalidades de ManejadorLista.
+
+![Captura 1 de la Ejecución de Main](practica04(1).png)
+![Captura 2 de la Ejecución de Main](practica04(2).png)
+
+El código fuente de los directorios está organizado por paquetes y se puede revisar directamente en la carpeta [src/](https://github.com/valeriagh-star/Practica-04/tree/main/src).
+
+| Carpetas | Ruta del Archivo .java |
+| :--- | :--- |
+| **Clase Usuario** | [src/modulos/Usuario.java](https://github.com/valeriagh-star/Practica-04/blob/main/src/modulos/Usuario.java) | 
+| **Clase Administrador** | [src/modulos/Administrador.java](https://github.com/valeriagh-star/Practica-04/blob/main/src/modulos/Administrador.java) |
+| **Clase Empleado** | [src/modulos/Empleado.java](https://github.com/valeriagh-star/Practica-04/blob/main/src/modulos/Empleado.java) |
+| **Interfaz ArregloInterface** | [src/Interfaces/ArregloInterface.java](https://github.com/valeriagh-star/Practica-04/blob/main/src/Interfaces/arregloInterface.java) | 
+| **Clase Main** | [src/Main/Main.java](https://github.com/valeriagh-star/Practica-04/blob/main/src/Main.java) |
+| **Clase ManejadorLista** | [src/ManejadorLista/ManejadorLista.java](https://github.com/valeriagh-star/Practica-04/blob/main/src/ManejadorLista.java) |
+| **README** | [Practica04/main/README.txt](https://github.com/valeriagh-star/Practica-04/blob/main/README.txt) | 
+
+## ▶️ Instrucciones de ejecución
+
+1.  **Clonar/Importar el repositorio el Repositorio:** Importa la carpeta Proyecto como un proyecto Java existente en Eclipse o IntelliJ.
+2.  **Abrir Main:** Localiza el archivo src/Main.java.
+3.  **Ejecutar:** Haz clic derecho sobre src/Main.java y selecciona "Run As" -> "Java Application".
+4.  **Interacción:** El programa solicitará el Nombre, Correo y Rol (Empleado o Administrador) para crear un nuevo usuario. El programa manejará las validaciones automáticamente (Manejo de Excepciones) para el nombre de usuario (mínimo 5 caracteres) y el formato del correo electrónico (@ y .com). Se mostrará el menú correspondiente al Rol ingresado (Administrador o Empleado).
+</div>
 
 
 
