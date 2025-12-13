@@ -28,7 +28,7 @@ $$
 
 1.  **Configuración de Hilos:** El programa debe aceptar como entrada del usuario el número de hilos ($N$) a utilizar.
 2.  **División de Trabajo:** El rango total de la suma ($1$ a $1,000,000$) debe dividirse equitativamente entre los $N$ hilos.
-    * *Ejemplo para **$N$=4**:* Hilo 1: $1 \rightarrow 250,000$, Hilo 2: $250,001 \rightarrow 500,000$, etc.
+    * *Ejemplo para N=4:* Hilo 1: $1 \rightarrow 250,000$, Hilo 2: $250,001 \rightarrow 500,000$, etc.
 3.  **Sincronización:** Cada hilo debe calcular su resultado parcial y guardarlo en una estructura compartida **sin generar condiciones de carrera**.
     * Se deben usar mecanismos de sincronización (por ejemplo, `synchronized`, `Locks`) o estructuras concurrentes (`Atomic...`, `ConcurrentHashMap`, etc.).
 4.  **Ensamblado:** El hilo principal debe:
@@ -63,25 +63,15 @@ El programa debe medir el tiempo total de ejecución para los siguientes escenar
 El proyecto está organizado en la siguiente estructura de directorios:
 
 **Proyecto/**
-  
   **├── src/**
-
   **│   ├── modulos/**
-  
   **│   │      ├── Administrador.java**
- 
   **│   │      ├── Empleado.java**
-  
   **│   │      └── Usuario.java**
-
   **│   ├── Interfaces/**
-  
   **│   │      └── ArregloInterface.java**
- 
   **│   ├── Main.java**
-
   **│   └── ManejadorLista.java**
-  
   **└── README.txt**
 
 ## 📸 Evidencias (Capturas de pantalla)
