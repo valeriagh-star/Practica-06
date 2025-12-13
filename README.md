@@ -84,9 +84,13 @@ El proyecto está organizado en la siguiente estructura de directorios:
 
 Aquí se muestran las pruebas de ejecución del programa, demostrando la correcta división de la carga de trabajo, la sincronización y la medición de los tiempos para el cálculo de la suma.
 
+* **Ejecución para *N=2***
 ![Captura 1 de la Ejecución de Main](practica06(1).png)
+* **Ejecución para *N=4***
 ![Captura 2 de la Ejecución de Main](practica06(2).png)
+* **Ejecución para *N=8***
 ![Captura 3 de la Ejecución de Main](practica06(3).png)
+* **Tabla Comparativa**
 ![Captura 4 de la Tabla Comparativa](practica06(4).png)
 
 
