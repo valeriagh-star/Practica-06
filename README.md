@@ -65,7 +65,7 @@ El proyecto está organizado en la siguiente estructura de directorios:
 
 ## 📸 Evidencias (Capturas de pantalla)
 
-A continuación se muestran capturas de pantalla sobre la ejecución en consola, donde se verifica el funcionamiento de 
+Aquí se muestran las pruebas de ejecución del programa, demostrando la correcta división de la carga de trabajo, la sincronización y la medición de los tiempos para el cálculo de la suma.
 
 ![Captura 1 de la Ejecución de Main](practica06(1).png)
 ![Captura 2 de la Ejecución de Main](practica06(2).png)
