@@ -62,6 +62,16 @@ El programa debe medir el tiempo total de ejecución para los siguientes escenar
 
 El proyecto está organizado en la siguiente estructura de directorios:
 
+**Practica06/
+    ├── src/
+    │   ├── hilos/
+    │   │   └── HiloSuma.java 
+    │   ├── principal/
+    │   │   └── Main.java 
+    │   └── recursos/
+    │       └── Acumulador.java 
+    └── README.txt**
+
 
 ## 📸 Evidencias (Capturas de pantalla)
 
@@ -75,10 +85,10 @@ El código fuente de los directorios está organizado por paquetes y se puede re
 
 | Carpetas | Ruta del Archivo .java |
 | :--- | :--- |
-| **Clase HiloSuma** | [src/hilos/HiloSuma.java]() |
-| **Clase Acumulador** | [src/recursos/Acumulador.java]() |
-| **Clase Main** | [src/principal/Main.java]() |
-| **README** | [Practica06/main/README.txt]() | 
+| **Clase HiloSuma** | [src/hilos/HiloSuma.java](https://github.com/valeriagh-star/Practica-06/blob/main/src/hilos/HiloSuma.java) |
+| **Clase Acumulador** | [src/recursos/Acumulador.java](https://github.com/valeriagh-star/Practica-06/blob/main/src/recursos/Acumulador.java) |
+| **Clase Main** | [src/principal/Main.java](https://github.com/valeriagh-star/Practica-06/blob/main/src/principal/Main.java) |
+| **README** | [Practica06/main/README.txt](https://github.com/valeriagh-star/Practica-06/blob/main/README.txt) | 
 
 ## ▶️ Instrucciones de ejecución
 
